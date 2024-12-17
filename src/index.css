@@ -1,0 +1,109 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.score-container {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.username-input {
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.reset-btn,
+.submit-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 45%;
+}
+
+.reset-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.reset-btn:hover,
+.submit-btn:hover {
+  opacity: 0.8;
+}
+.worksheet-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.worksheet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin: 15px 0;
+}
+
+.question label {
+  margin-right: 10px;
+}
+
+.question input {
+  width: 20px;
+  height: 20px;
+}
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px;
+  }
+
+  .worksheet {
+    margin-top: 10px;
+  }
+
+  .username-input {
+    width: 100%;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .reset-btn,
+  .submit-btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
