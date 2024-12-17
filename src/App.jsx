@@ -7,16 +7,15 @@ import Header from "./components/Header";
 
 const App = () => {
   const [userName, setUserName] = useState("");
-  const [answers, setAnswers] = useState(Array(12).fill(null)); // Track answers for 12 questions
+  const [answers, setAnswers] = useState(Array(12).fill(null));
   const [score, setScore] = useState(null);
   const [submitted, setSubmitted] = useState(false);
 
-  // Correct answers (For simplicity, using numbers here, e.g., 10, 20, etc.)
   const correctAnswers = [60, 70, 50, 80, 90, 40, 60, 50, 20, 10, 40, 30];
 
   const handleAnswerChange = (index, selectedOption) => {
     const updatedAnswers = [...answers];
-    updatedAnswers[index] = selectedOption; // Store the selected option
+    updatedAnswers[index] = selectedOption;
     setAnswers(updatedAnswers);
   };
 
